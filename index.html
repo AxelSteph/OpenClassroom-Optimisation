@@ -60,29 +60,29 @@
     />
   </head>
   <body>
-    <main>
-      <div class="top-header">
-        <h1 class="name">Nina Carducci</h1>
-        <div class="nav" role="navigation">
-          <ul>
-            <li><a href="#about">À propos</a></li>
-            <li><a href="#gallery">Galerie</a></li>
-            <li><a href="#services">Service</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li>
-              <a
-                class="social-link"
-                href="https://www.instagram.com/ninacarducci.photo/?hl=fr"
-                target="_blank"
-                aria-label="Profil Instagram"
-              >
-                <img src="assets/images/instagram.png" alt="Logo Instagram" />
-              </a>
-            </li>
-          </ul>
-        </div>
+    <header class="top-header">
+      <h1 class="name">Nina Carducci</h1>
+      <div class="nav" role="navigation">
+        <ul>
+          <li><a href="#about">À propos</a></li>
+          <li><a href="#gallery">Galerie</a></li>
+          <li><a href="#services">Service</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li>
+            <a
+              class="social-link"
+              href="https://www.instagram.com/ninacarducci.photo/?hl=fr"
+              target="_blank"
+              aria-label="Profil Instagram"
+            >
+              <img src="assets/images/instagram.png" alt="Logo Instagram" />
+            </a>
+          </li>
+        </ul>
       </div>
-      <div id="header" role="banner">
+    </header>
+    <main>
+      <section role="banner">
         <div
           id="carouselExampleIndicators"
           class="carousel slide"
@@ -153,8 +153,8 @@
             <span class="visually-hidden">Next</span>
           </button>
         </div>
-      </div>
-      <div id="about" role="region" aria-label="À propos de moi">
+      </section>
+      <section id="about" role="region" aria-label="À propos de moi">
         <div class="picture left">
           <img
             src="./assets/images/nina.webp"
@@ -182,8 +182,8 @@
             yeux sur vos photos.
           </p>
         </div>
-      </div>
-      <div id="gallery" role="region" aria-label="Galerie photo">
+      </section>
+      <section id="gallery" role="region" aria-label="Galerie photo">
         <h2 class="title">Portfolio</h2>
         <div class="container py-3">
           <div class="gallery">
@@ -263,8 +263,8 @@
             <figcaption class="quote__author">- Richard Avedon</figcaption>
           </figure>
         </div>
-      </div>
-      <div id="services" role="region" aria-label="Mes services">
+      </section>
+      <section id="services" role="region" aria-label="Mes services">
         <h2 class="title">Mes services</h2>
         <div class="container">
           <div class="service">
@@ -309,7 +309,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
       <div class="quote" role="region" aria-label="Citation">
         <figure>
           <blockquote class="quote__text">
@@ -320,10 +320,10 @@
           <figcaption class="quote__author">- Richard Avedon</figcaption>
         </figure>
       </div>
-      <div id="contact" role="region" aria-label="Formulaire de contact">
+      <section id="contact" role="region" aria-label="Formulaire de contact">
         <div class="container">
           <div class="form-container">
-            <h3>Une question ? Une demande de devis ?</h3>
+            <h2>Une question ? Une demande de devis ?</h2>
             <p>
               N’hésitez pas à m’écrire ! Je vous répondrais en moins de 24
               heures
@@ -351,28 +351,28 @@
             />
           </div>
         </div>
-      </div>
-      <footer class="site-footer" role="contentinfo">
-        <div class="site-footer-container">
-          <div itemscope itemtype="http://schema.org/LocalBusiness">
-            <span itemprop="name">Nina Carducci Photographie</span>
-            <div
-              itemprop="address"
-              itemscope
-              itemtype="http://schema.org/PostalAddress"
-            >
-              <span itemprop="streetAddress">68 avenue Alsace-Lorraine</span>
-              <span itemprop="addressLocality">Bordeaux</span>,
-              <span itemprop="addressRegion">Bordeaux</span>
-              <span itemprop="postalCode">33200</span>
-            </div>
-          </div>
-          <p class="site-footer-copyright">
-            © 2026 Nina Carducci Photographie. Tous droits réservés.
-          </p>
-        </div>
-      </footer>
+      </section>
     </main>
+    <footer class="site-footer" role="contentinfo">
+      <div class="site-footer-container">
+        <div itemscope itemtype="http://schema.org/LocalBusiness">
+          <span itemprop="name">Nina Carducci Photographie</span>
+          <div
+            itemprop="address"
+            itemscope
+            itemtype="http://schema.org/PostalAddress"
+          >
+            <span itemprop="streetAddress">68 avenue Alsace-Lorraine</span>
+            <span itemprop="addressLocality">Bordeaux</span>,
+            <span itemprop="addressRegion">Bordeaux</span>
+            <span itemprop="postalCode">33200</span>
+          </div>
+        </div>
+        <p class="site-footer-copyright">
+          © 2026 Nina Carducci Photographie. Tous droits réservés.
+        </p>
+      </div>
+    </footer>
 
     <script
       src="https://code.jquery.com/jquery-3.4.1.min.js"
